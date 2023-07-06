@@ -7,7 +7,7 @@ import io from 'socket.io-client';
 import LineComp from './LineComp';
 import BarComp from './BarComp';
 import Download from './Download';
-const socket = io.connect('http://localhost:1800')
+const socket = io.connect('https://real-time-graph-backend.vercel.app/')
 
 
 function Main() {
