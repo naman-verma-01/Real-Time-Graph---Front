@@ -42,7 +42,7 @@ function Main() {
     const sendMessage = async () => {
         socket.emit('send_message', { value: sale, time: new Date(date).getTime() })
 
-        await fetch('http://localhost:1800/addData', {
+        await fetch('https://real-time-graph-backend.vercel.app/addData', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function Main() {
     }
 
     const getData = async () => {
-        let res = await fetch('http://localhost:1800/getData')
+        let res = await fetch('https://real-time-graph-backend.vercel.app/getData')
         res = await res.json()
 
         await res.data.sort((a, b) => { return a.time - b.time })
