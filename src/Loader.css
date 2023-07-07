@@ -1,8 +1,6 @@
 .loaderContainer{
+    z-index: 10;
     position: absolute;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     height: 100vh;
     width: 100vw;
     backdrop-filter: blur(3px);

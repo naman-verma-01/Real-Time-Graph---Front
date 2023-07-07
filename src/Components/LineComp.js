@@ -86,7 +86,7 @@ function LineComp({ data }) {
       },
       title: {
         display: true,
-        text: 'Line Chart',
+        text: 'LINE CHART',
       },
       zoom: {
         zoom: {
@@ -106,7 +106,8 @@ function LineComp({ data }) {
           display: false
         }
       }
-    }
+    },
+    responsive:true
 
   };
 
@@ -119,7 +120,9 @@ function LineComp({ data }) {
 
   return (
     <div className='graph'>
-      <Line ref={chartRef} options={options} data={data} />
+      <div  className='graph-container'>
+        <Line ref={chartRef} options={options} data={data} />
+      </div>
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
         <button onClick={handleResetZoom}>RESET </button>
       </div>

@@ -29,7 +29,7 @@ function Download({data}) {
     
   return (
     <div>
-        <button  onClick={downloadHandler}>Download</button>
+        <button  onClick={downloadHandler}>DOWNLOAD</button>
     </div>
   )
 }

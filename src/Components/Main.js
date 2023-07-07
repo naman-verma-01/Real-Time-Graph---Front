@@ -23,7 +23,7 @@ function Main() {
         labels: [],
         datasets: [
             {
-                label: 'Sales V/S Date',
+                label: 'SALES V/S DATE',
                 data: [],
                 borderColor: 'rgb(247, 109, 1)',
                 backgroundColor: 'rgba(247, 109, 1,1)',
@@ -70,7 +70,7 @@ function Main() {
                 labels: labelArr,
                 datasets: [
                     {
-                        label: 'Sales V/S Date',
+                        label: 'SALES V/S DATE',
                         data: dataArr,
                         borderColor: 'rgb(247, 109, 1)',
                         backgroundColor: 'rgba(247, 109, 1,1)',
@@ -115,11 +115,11 @@ function Main() {
 
                 <div id='form'>
                     <div className='inputContainer'>
-                        <label>Sales</label><br/>
+                        <label>SALES</label><br/>
                         <input type='number' value={sale} onChange={(event) => { setSale(event.target.value) }}></input><br />
                     </div>
                     <div className='inputContainer'>
-                        <label>Date of Sale</label><br/>
+                        <label>DATE OF SALES</label><br/>
                         <input type='date' value={date} onChange={(event) => { setDate(event.target.value) }}></input><br />
                     </div>
                     <div id='buttonContainer'>
